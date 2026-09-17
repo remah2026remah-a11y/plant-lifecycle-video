@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دورة حياة النبات</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: linear-gradient(145deg, #effcf3, #d9f3df); color: #173b27; }
+    main { width: min(960px, 92%); margin: 0 auto; padding: 48px 0 56px; }
+    .card { background: rgba(255,255,255,.92); border: 1px solid #c7e7ce; border-radius: 24px; padding: clamp(22px, 5vw, 48px); box-shadow: 0 18px 55px rgba(32, 93, 53, .14); }
+    h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3.4rem); color: #176b38; }
+    .intro { margin: 0 0 28px; font-size: 1.12rem; line-height: 1.9; color: #42654d; }
+    video { display: block; width: 100%; border-radius: 16px; background: #102218; box-shadow: 0 8px 24px rgba(0,0,0,.16); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+    a { display: inline-block; padding: 11px 18px; border-radius: 10px; text-decoration: none; font-weight: 700; background: #198754; color: white; }
+    a.secondary { background: #e7f5ea; color: #176b38; }
+    footer { margin-top: 24px; text-align: center; color: #66806d; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h1>دورة حياة النبات</h1>
+      <p class="intro">فيديو تعليمي باللغة العربية يشرح رحلة النبات من البذرة إلى الإنبات والنمو والإزهار وتكوين بذور جديدة.</p>
+      <video controls preload="metadata" poster="">
+        <source src="output/plant_lifecycle_ar.mp4" type="video/mp4">
+        <track src="output/subtitles.vtt" kind="subtitles" srclang="ar" label="العربية" default>
+        متصفحك لا يدعم تشغيل الفيديو. يمكنك تنزيله من الرابط أدناه.
+      </video>
+      <div class="actions">
+        <a href="output/plant_lifecycle_ar.mp4" download>تنزيل الفيديو</a>
+        <a class="secondary" href="output/subtitles.srt" download>تنزيل الترجمة</a>
+      </div>
+    </section>
+    <footer>مشروع تعليمي عن دورة حياة النبات</footer>
+  </main>
+</body>
+</html>
